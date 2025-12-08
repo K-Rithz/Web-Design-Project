@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 0 40px;
+}
+
+.main p {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.9);
+    grid-column: span 3;
+}
+
+.card {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card .image-box {
+  width: 90%;
+  height: 170px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: row;
+}
+
+.card .image-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: brightness(0.75) contrast(0.7) saturate(1.05);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+#c1 {
+    background-image: url("Images/Nature.jpg");
+}
+#c2 {
+    background-image: url("Images/Beach.jpg");
+}
+#c3 {
+    background-image: url("Images/Wonder.jpg");
+}
+#c4 {
+    background-image: url("Images/Ancient_B.jpg");
+}
+#c5 {
+    background-image: url("Images/National-P.jpg");
+}
+
+.card .image-box a {text-decoration: none;}
+.card .image-box a p {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+#p1 {
+    font-size: 40px;
+    margin: 30px 0 0 25px;
+}
+#p2 {
+    font-size: 30px;
+    margin: -10px 0 0 50px;
+}
+#p3 {
+    font-size: 40px;
+    margin: -37px 0 0 90px;
+}
+#p4 {
+    font-size: 40px;
+    margin: 60px 0 0 25px
+}
+#p5 {
+    font-size: 40px;
+    margin: 25px 0 0 25px;
+}
+#p6 {
+    font-size: 23px;
+    margin: -10px 0 0 65px;
+}
+#p7 {
+    font-size: 40px;
+    margin: -10px 0 0 25px;
+}
+#p8 {
+    font-size: 40px;
+    margin: 35px 0 0 25px;
+}
+#p9 {
+    font-size: 40px;
+    margin: -15px 0 0 57px;
+}
+#p10 {
+    font-size: 35px;
+    margin: 60px 0 0 25px;
+}
+
+.card p {
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    margin: 0 0 0 25px;
+}
+
+.card .image-box:hover {transform: scale(1.05);}
+.card .image-box:hover::before {
+    transform: scale(1.05);
+    filter: brightness(0.9) contrast(0.8) saturate(1);
+}
+
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}
