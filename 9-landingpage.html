@@ -8,25 +8,14 @@
     <link rel="stylesheet" href="9.landingpage.css">
 </head>
 <body>
-    <div class="topbar" style="position: fixed;">
+    <div class="topbar" style="position: absolute; 
+    width: 100%;
+    z-index: 3;">
         <div class="left">
             <img src="Images/Project Logo.png" alt="Logo">
-            <span><a href="9-landingpage.html">DOMNER</a></span>
+            <span><a href="9-landingpage.html" style="color: white;">DOMNER</a></span>
         </div>
-        <div class="mid">
-            <div class="button1"><a href="4-search1.html">
-                <img src="Images/Search Icon.png" alt="Search"
-                style="width: 30px; height: 30px; padding-left: 7px;">
-                <p>Search</p>
-            </a>
-                <select name="Options" id="whatever">
-                    <option value="Destination" selected>By Destination name</option>
-                    <option value="Country">By Country name</option>
-                </select>
-            </div>
-            <div class="button2"><a href="5-category.html">CATEGORY</a></div>
-        </div>
-        <div class="right">
+        <div class="right" style="margin-right: -20px;">
             <div class="nav">
                 <a href="1-home.html">HOME</a>
                 <a href="6-favorite.html">FAVORITE</a>
@@ -37,38 +26,90 @@
         </div>
         <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
     </div>
-    <div class="navsidebar">
-        <div class="menu">
-            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
-            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
-            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
-            onclick=hidesidebar()>
-        </div>
-        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
-        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
-        <div class="search1">
-            <a href="4-search1.html" onclick=hidesidebar()>
-                <img src="Images/Search Icon.png" alt="Search"
-                style="width: 30px; height: 30px; padding-left: 7px;">
-                <p>Search</p>
-            </a>
-            <select name="Options" id="whatever">
-                <option value="Destination" selected>By Destination name</option>
-                <option value="Country">By Country name</option>
-            </select>
-        </div>
-        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
-    </div>
 
     <!-- Continue from here -->
+     <div class="hero-section">
+        <div class="overlay"></div> 
+        <div class="content">
+            <h1>DOMNER</h1>
+            <h2>EXPLORE THE WORLD WITH A SMILE</h2>
+            <a href="1-home.html" class="cta-button">Get Started</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>&#8595;</span>
+        </div>
+    </div>
+
+    <div class="section-container features-section">
+        <h2 class="section-title">Why Choose Domner?</h2>
+        <div class="divider"></div>
+        
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <img src="Images/Search.png" alt="Search" class="feature-icon"> 
+                <h3>Search Exploration</h3>
+                <p>Find your next adventure instantly using our smart search tools to explore regions and hidden spots.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/Category.jpg" alt="Category" class="feature-icon"> 
+                <h3>Category Lists</h3>
+                <p>Browse destinations organized by interest: Nature, City Life, Culture, and Weekend Getaways.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/Add-to-Fav.jpg" alt="Favorite" class="feature-icon"> 
+                <h3>Add to Favorite</h3>
+                <p>Build your bucket list. Save the places you love so you never lose track of a dream trip.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/User Icon.png" alt="Account" class="feature-icon"> 
+                <h3>Login / Register</h3>
+                <p>Create an account to sync your saved trips, manage your profile, and access exclusive features.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-container about-teaser">
+        <div class="about-content">
+            <h2>Making Travel Simple</h2>
+            <p>DOMNER was born from a simple idea: exploring shouldn't be complicated. We bridge the gap between travelers and the beautiful, unseen corners of our country.</p>
+            <p>Whether you are a local looking for a weekend getaway or a tourist seeking adventure, we are here to guide you.</p>
+            <br>
+            <a href="8-aboutus.html" class="secondary-btn">Read Our Story</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>DOMNER</h3>
+                <p>Your ultimate travel companion.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="1-home.html">Home</a>
+                <a href="8-aboutus.html">About Us</a>
+                <a href="7-contact.html">Contact</a>
+                <a href="2-login.html">Login</a> 
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: domner@trip.com</p>
+                <p>Phone: +855 12 345 678</p>
+                <p>Phnom Penh, Cambodia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DOMNER. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script>
         function showSidebar() {
@@ -79,6 +120,23 @@
             const sidebar = document.querySelector('.navsidebar');
             sidebar.style.display = 'none';
         }
+        const select = document.getElementById("whatever");
+        const link = document.getElementById("searchLink");
+
+        function updateLink() {
+            switch (select.value) {
+            case "Destination":
+                link.href = "4-search1.html";
+                break;
+            case "Country":
+                link.href = "4-search2.html";
+                break;
+            default:
+                link.href = "#";
+            }
+        }
+        updateLink();
+        select.addEventListener("change", updateLink);
     </script>
 </body>
 </html>

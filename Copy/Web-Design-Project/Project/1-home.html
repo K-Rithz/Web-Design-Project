@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="1.home.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="mid">
+            <div class="button1"><a href="4-search1.html">
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+                <select name="Options" id="whatever">
+                    <option value="Destination" selected>By Destination name</option>
+                    <option value="Country">By Country name</option>
+                </select>
+            </div>
+            <div class="button2"><a href="5-category.html">CATEGORY</a></div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="" style="text-decoration: underline;">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+    <div class="navsidebar">
+        <div class="menu">
+            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
+            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
+            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
+            onclick=hidesidebar()>
+        </div>
+        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
+        <span style="width: 100%; background-color: rgba(21, 194, 221, 0.342);" onclick=hidesidebar()><a href="" 
+        style="color: white; font-size: 1.3em; margin: 10px;">HOME</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
+        <div class="search1">
+            <a href="4-search1.html" onclick=hidesidebar()>
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+            <select name="Options" id="whatever">
+                <option value="Destination" selected>By Destination name</option>
+                <option value="Country">By Country name</option>
+            </select>
+        </div>
+        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
+    </div>
+
+    <!-- Continue from here -->
+
+    <!-- HERO -->
+    <div class="main">
+        <section class="hero">
+            <img src="Images/Home-p.jpg" alt="Travel">
+            <h1>EXPLORE THE WORLD WITH SMILE</h1>
+        </section>
+
+        <section class="section">
+            <!-- TOP DESTINATION -->
+            <h2>Top Destinations of All Time</h2>
+            <div class="card-container">
+                <a href="1.1-detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                    <img src="Images/Angkor Wat.jpg">
+                    <h3>Angkor Wat</h3>
+                    <p>Cambodia</p>
+                </div>
+                </a>
+                <div class="card">
+                    <img src="Images/Chongqing.jpg">
+                    <h3>Chongqing City</h3>
+                    <p>China</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BALI Waterfall.jpg">
+                    <h3>Bali</h3>
+                    <p>Indonesia</p>
+                </div>
+                <div class="card">
+                    <img src="Images/Eiffel Tower.jpg">
+                    <h3>Eiffel Tower</h3>
+                    <p>France</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRENDING -->
+        <section class="section">
+            <h2>Trending Destinations</h2>
+            <div class="card-container">
+                <a href="1.2-detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <img src="Images/tokyo.jpg">
+                        <h3>Tokyo</h3>
+                        <p>Japan</p>
+                    </div>
+                </a>
+                <div class="card">
+                    <img src="Images/Seoul.jpg">
+                    <h3>Seoul</h3>
+                    <p>South Korea</p>
+                </div>
+                <div class="card">
+                    <img src="Images/KL.jpg">
+                    <h3>Kuala Lumpur</h3>
+                    <p>Malaysia</p>
+                </div>
+                <div class="card">
+                    <img src="Images/Colosseum.jpg">
+                    <h3>Colosseum</h3>
+                    <p>Italy</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- BUDGET FRIENDLY -->
+        <section class="section">
+            <h2>Top Budget-Friendly Destinations</h2>
+            <div class="card-container">
+                <a href="1.3-detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <img src="Images/luang prabang.jpg">
+                        <h3>Luang Prabang</h3>
+                        <p>Laos</p>
+                    </div>
+                </a>
+                <div class="card">
+                    <img src="Images/hanoi.jpg">
+                    <h3>Hanoi</h3>
+                    <p>Vietnam</p>
+                </div>
+                <div class="card">
+                    <img src="Images/Siemreap.jpg">
+                    <h3>Siem Reap</h3>
+                    <p>Cambodia</p>
+                </div>
+                <div class="card">
+                    <img src="Images/koh rong.jpg">
+                    <h3>Koh Rong</h3>
+                    <p>Cambodia</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

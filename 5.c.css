@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main {
+   margin-left: 20px;
+   width: 95%;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   row-gap: 25px;
+}
+
+.headline {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    margin: -10px 0 10px 32px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.headline img {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.headline a button {
+    width: 220px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 33px 0 0 715px;
+}
+
+.headline a button:hover {
+    transform: scale(1.05);
+}
+
+.des-card {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 20px;
+    background-color: lightgray;
+    border-radius: 20px 0;
+    box-shadow: 3px 3px 3px rgb(133, 133, 133);
+}
+
+.des-card:hover {
+    transform: translateY(-5px);
+}
+
+.des-card a img {
+    width: 100%;
+    aspect-ratio: 15/12;
+    object-fit: conatain;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 0;
+}
+
+.des-card a {text-decoration: none;}
+.des-card a .text {
+    font-family: "Noto Sans", sans-serif;
+    color: black;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0 0 15px;
+}
+
+.des-card a .text .rated {
+    display: flex;
+    flex-direction: row;
+    margin-top: -25px;
+    font-weight: 500;
+}
+
+.des-card a .text .rated img {
+    margin-top: 20px;
+    margin-left: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    filter: brightness(1.1) exposure(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .headline {
+        font-size: 1.3rem;
+        margin: 0 0 10px 25px;
+        padding-bottom: 7px;
+    }
+    .headline img {
+        width: 30px;
+        height: 30px;
+        margin-top: 18px;
+    }
+    .headline a button {
+        font-size: 0.9rem;
+        width: 130px;
+        margin: 10px 0 0 80px;
+    }
+    hr {
+        width: 65%;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        row-gap: 300px;
+    }
+    .des-card {
+        width: 75%;
+    }
+}

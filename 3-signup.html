@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="3.signup.css">
 </head>
 <body>
-    <div class="topbar" style="position: fixed;">
+    <div class="topbar" style="position: sticky;">
         <div class="left">
             <img src="Images/Project Logo.png" alt="Logo">
             <span><a href="9-landingpage.html">DOMNER</a></span>
@@ -57,6 +57,27 @@
     </div>
 
     <!-- Continue from here -->
+     <div class="container">
+        <div class="signup-card">
+            <h2>Sign Up</h2>
+
+            <div class="name-group">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <input type="email" placeholder="Enter Your Email Address" required>
+            <input type="password" placeholder="Enter Your Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <label class="checkbox">
+                <input type="checkbox">
+                <span>I Agree with <a href="#">privacy</a> and <a href="#">policy</a></span>
+            </label>
+
+            <button>Create Account</button>
+        </div>
+    </div>
 
     <script>
         function showSidebar() {
@@ -66,6 +87,40 @@
         function hidesidebar() {
             const sidebar = document.querySelector('.navsidebar');
             sidebar.style.display = 'none';
+        }
+    const signupBtn = document.querySelector(".signup-card button");
+        if(signupBtn){
+            signupBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                const firstName = document.querySelector(".signup-card input[placeholder='First Name']").value;
+                const lastName = document.querySelector(".signup-card input[placeholder='Last Name']").value;
+                const email = document.querySelector(".signup-card input[type='email']").value;
+                const password = document.querySelector(".signup-card input[type='password']").value;
+                const confirmPassword = document.querySelectorAll(".signup-card input[type='password']")[1].value;
+                const checkbox = document.querySelector(".signup-card input[type='checkbox']").checked;
+
+                if(!checkbox){
+                    alert("You must agree to the privacy and policy.");
+                    return;
+                }
+
+                if(password !== confirmPassword){
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                let users = JSON.parse(localStorage.getItem("users") || "{}");
+
+                if(users[email]){
+                    alert("User already exists!");
+                    return;
+                }
+
+                users[email] = password;
+                localStorage.setItem("users", JSON.stringify(users));
+                alert("Account created successfully! You can now login.");
+                window.location.href = "2-login.html"; // redirect to login page
+            });
         }
     </script>
 </body>

@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="6.favorite.css">
 </head>
 <body>
-    <div class="topbar" style="position: fixed;">
+    <div class="topbar" style="position: sticky;">
         <div class="left">
             <img src="Images/Project Logo.png" alt="Logo">
             <span><a href="9-landingpage.html">DOMNER</a></span>
         </div>
         <div class="mid">
-            <div class="button1"><a href="4-search1.html">
+            <div class="button1"><a id="searchLink" href="">
                 <img src="Images/Search Icon.png" alt="Search"
                 style="width: 30px; height: 30px; padding-left: 7px;">
                 <p>Search</p>
             </a>
                 <select name="Options" id="whatever">
-                    <option value="Destination" selected>By Destination name</option>
+                    <option value="" selected>-- Select a choice --</option>
+                    <option value="Destination">By Destination name</option>
                     <option value="Country">By Country name</option>
                 </select>
             </div>
@@ -68,9 +69,95 @@
         </div>
         <div class="search2"><a href="5-category.html">CATEGORY</a></div>
     </div>
-
-
-
+    <div class="head">
+        <img src="Images/Heart.png" alt="Search">
+        <p>Your Favorite</p>
+    </div>
+    <hr style="width: 95%; margin-top: -30px; border: 1px solid rgba(0, 0, 0, 0.7)">
+    <div class="main">
+        <div class="des-card"> <a href="">
+            <img src="Images/Angkor Wat.jpg" alt="Angkor Wat">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Angkor Wat</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Cambodia</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Swiss Alps.jpg" alt="Swiss Alps">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Swiss Alps</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Switzerland</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Koh Rong.jpg" alt="Koh Rong">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Koh Rong</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Cambodia</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Fiordland.jpg" alt="Fiordland">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Fiordland N.Park</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Croatia</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Chongqing.jpg" alt="Chongqing">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Chongqing City</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">China</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Machu Picchu.jpg" alt="Machu Pichu">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Machu Pichu</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Peru</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Mt. Fuji.jpg" alt="Mt.FUJI">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Mt. Fuji</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Japan</p>
+                <div class="fav">
+                    <img src="Images/Heart.png" alt="Star">
+                    <p>Favorite</p>
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card" style="background-color: rgb(238, 238, 238);"><a href="5-category.html">
+            <img src="Images/Add.png" alt="Add" style="width: 100px; height: 100px;
+            margin-top: 100px; margin-left: 80px;">
+        </a>
+        </div>
+    </div>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.navsidebar');
@@ -80,6 +167,23 @@
             const sidebar = document.querySelector('.navsidebar');
             sidebar.style.display = 'none';
         }
+        const select = document.getElementById("whatever");
+        const link = document.getElementById("searchLink");
+
+        function updateLink() {
+            switch (select.value) {
+            case "Destination":
+                link.href = "4-search1.html";
+                break;
+            case "Country":
+                link.href = "4-search2.html";
+                break;
+            default:
+                link.href = "#";
+            }
+        }
+        updateLink();
+        select.addEventListener("change", updateLink);
     </script>
 </body>
 </html>

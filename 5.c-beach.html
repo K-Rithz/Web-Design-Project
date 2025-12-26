@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="5.c.css">
+</head>
+<body>
+    <div class="topbar" style="position: sticky;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="mid" style="display: none;">
+            <div class="button1"><a href="4-search1.html">
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+                <select name="Options" id="whatever">
+                    <option value="Destination" selected>By Destination name</option>
+                    <option value="Country">By Country name</option>
+                </select>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" 
+        style="margin-left: 400px;" onclick=showSidebar()>
+    </div>
+    <div class="navsidebar">
+        <div class="menu">
+            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
+            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
+            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
+            onclick=hidesidebar()>
+        </div>
+        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7); margin-top: 5px;">
+        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0; margin-top: 4px;">
+        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;  margin-top: 4px;">
+        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0; margin-top: 4px;">
+        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0; margin-top: 4px;">
+        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
+        <div class="search1">
+            <a href="4-search1.html" onclick=hidesidebar()>
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+            <select name="Options" id="whatever">
+                <option value="Destination" selected>By Destination name</option>
+                <option value="Country">By Country name</option>
+            </select>
+        </div>
+        <div class="search2"><a href="" style="text-decoration: underline; text-decoration-color: white;">CATEGORY</a></div>
+    </div>
+    <div class="headline">
+        <p style="color: rgb(51, 51, 51);">CATEGORY : </p>
+        <p style="color: #1798d3;">BEACHES/SEA</p>
+        <img src="Images/B-S_Logo.png" alt="Logo">
+        <a href="5-category.html"><button 
+            style="background: linear-gradient(to right, #1798d3, #355afe); margin-left: 780px;"
+            >BACK TO CATEGORY</button></a>
+    </div>
+    <hr style="width: 95%; justify-self: center; border-top: 1px solid darkgray; margin-top: -25px;">
+    <div class="main">
+        <div class="des-card"> <a href="">
+            <img src="Images/Maldives.jpg" alt="Maldives">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Maldives</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Maldives</p>
+                <div class="rated">
+                    <p>Rated : 5/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Ha Long Bay.jpg" alt="Ha Long Bay">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Ha Long Bay</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Vietnam</p>
+                <div class="rated">
+                    <p>Rated : 4/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Zanzibar.jpg" alt="Zanzibar">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Zanzibar</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Tanzania</p>
+                <div class="rated">
+                    <p>Rated : 4.5/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Cinque Terre.jpg" alt="Cinque Terre">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Cinque Terre</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Italy</p>
+                <div class="rated">
+                    <p>Rated : 4/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Barrier Reef.jpg" alt="Great Barrier Reef">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Great Barrier Reef</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Australia</p>
+                <div class="rated">
+                    <p>Rated : 4/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Jeju Island.jpg" alt="Jeju Island">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Jeju Island</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">South Korea</p>
+                <div class="rated">
+                    <p>Rated : 4.3/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Koh Rong.jpg" alt="Koh Rong">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Koh Rong</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Cambodia</p>
+                <div class="rated">
+                    <p>Rated : 5/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Bondi.jpg" alt="Bondi">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Bondi Beach</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Australia</p>
+                <div class="rated">
+                    <p>Rated : 3.8/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Boracay.jpg" alt="Boracay">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Boracay</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Philippines</p>
+                <div class="rated">
+                    <p>Rated : 4/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Galapagos.jpg" alt="Galapagos">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Galápagos Island</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Ecuador</p>
+                <div class="rated">
+                    <p>Rated : 3.7/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Bali.jpg" alt="Bali">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Bali</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Indonesia</p>
+                <div class="rated">
+                    <p>Rated : 4/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+        <div class="des-card"> <a href="">
+            <img src="Images/Copacabana.jpg" alt="Copacabana">
+            <div class="text">
+                <p style="font-size: 18px; font-weight: 600;">Copacabana</p>
+                <p style="font-size: 15px; margin-top: -20px; color: #282727;">Brazil</p>
+                <div class="rated">
+                    <p>Rated : 4.8/5</p>
+                    <img src="Images/Star.png" alt="Star">
+                </div>
+            </div>
+        </a></div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -49,7 +49,7 @@
 
     { 
         "id": 13, "name": "Ha Long Bay", "location": "Vietnam", 
-        "category": "Nature", "status": "Unfavorite" 
+        "category": "Beach", "status": "Unfavorite" 
     },
     { 
         "id": 14, "name": "Mount Fuji", "location": "Japan", 
@@ -181,7 +181,7 @@
     },
     { 
         "id": 46, "name": "Cinque Terre", "location": "Italy", 
-        "category": "Nature", "status": "Unfavorite" 
+        "category": "Beach", "status": "Unfavorite" 
     },
     { 
         "id": 47, "name": "Lake Baikal", "location": "Russia", 
@@ -189,7 +189,7 @@
     },
     { 
         "id": 48, "name": "Galápagos Islands", "location": "Ecuador", 
-        "category": "Nature", "status": "Unfavorite" 
+        "category": "Beach", "status": "Unfavorite" 
     },
     { 
         "id": 49, "name": "Komodo National Park", "location": "Indonesia", 
@@ -197,6 +197,46 @@
     },
     { 
         "id": 50, "name": "Jiuzhaigou Valley", "location": "China", 
+        "category": "National Park", "status": "Unfavorite"
+    },
+    { 
+        "id": 51, "name": "Smoo Cave", "location": "Scotland", 
         "category": "Nature", "status": "Unfavorite"
+    },
+    { 
+        "id": 52, "name": "Hang son Dong", "location": "Vietnam", 
+        "category": "Nature", "status": "Unfavorite"
+    },
+    { 
+        "id": 53, "name": "Black Forest", "location": "France", 
+        "category": "Nature", "status": "Unfavorite"
+    },
+    { 
+        "id": 54, "name": "Arashimaya", "location": "Japan", 
+        "category": "Nature", "status": "Unfavorite"
+    }, 
+    { 
+        "id": 55, "name": "Big Ben", "location": "England", 
+        "category": "Ancient Building", "status": "Unfavorite"
+    },
+    { 
+        "id": 56, "name": "Tower of Pisa", "location": "Italy", 
+        "category": "Ancient Building", "status": "Unfavorite"
+    },
+    { 
+        "id": 57, "name": "Fushimi Inari", "location": "Japan", 
+        "category": "Ancient Building", "status": "Unfavorite"
+    },
+    { 
+        "id": 58, "name": "Sagrada Familia", "location": "Spain", 
+        "category": "Ancient Building", "status": "Unfavorite"
+    },
+    { 
+        "id": 59, "name": "Habin", "location": "China", 
+        "category": "Ancient Building", "status": "Unfavorite"
+    },
+    { 
+        "id": 60, "name": "Chongqin City", "location": "China", 
+        "category": "Ancient Building", "status": "Unfavorite"
     }
 ]

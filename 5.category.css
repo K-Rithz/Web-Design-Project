@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .main {
     width: 100%;
@@ -15,6 +16,23 @@
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.9);
     grid-column: span 3;
+}
+#subtle {
+    color: rgb(20, 20, 20);
+    font-size: 22px;
+    margin: -13px 0 0 3px;
+    padding-bottom: 25px;
+}
+
+hr {
+    grid-column: span 3;
+    color: black;
+    width: 96.4%;
+    margin-top: -25px;
+    margin-left: 4px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
 }
 
 .card {
@@ -67,7 +85,8 @@
 }
 
 .card .image-box a {text-decoration: none;}
-.card .image-box a p {
+.card .image-box a .title p {
+    width: 80%;
     position: relative;
     z-index: 1;
     color: white;
@@ -112,7 +131,46 @@
 }
 #p10 {
     font-size: 35px;
-    margin: 60px 0 0 25px;
+    margin: 40px 0 0 25px;
+}
+#p11 {
+    font-size: 35px;
+    margin: -15px 0 0 75px;
+}
+.card .image-box a .cta::before {
+    content: ">";
+}
+
+.card .image-box a .cta {
+    font-family: 'Eczar', sans-serif;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cta1 {
+    margin: -132px 0 0 371px;
+}
+#cta2 {
+    margin: -115px 0 0 372px;
+}
+#cta3 {
+    margin: -144px 0 0 371px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.45));
+}
+#cta4 {
+    margin: -128px 0 0 371px;
+}
+#cta5 {
+    margin: -120px 0 0 371px;
 }
 
 .card p {
@@ -129,9 +187,56 @@
     filter: brightness(0.9) contrast(0.8) saturate(1);
 }
 
-@media (max-width: 600px) {
-    .main {
-        grid-template-columns: 1fr;
-        margin: 10px;
+@media screen and (max-width: 600px) {
+     .main {
+        grid-template-columns: 1fr !important;
+        margin: 0 15px !important;
+    }
+    
+    .main p {
+        font-size: 25px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        grid-column: span 1;
+    }
+    #subtle {
+        font-size: 18px;
+        margin-top: -15px;
+        padding-bottom: 15px;
+    }
+    hr {
+        width: 97%;
+        grid-column: span 1;
+    }
+    .card {
+        width: 97%;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .card .image-box {
+        width: 100% !important;
+        height: 200px !important;
+        border-radius: 15px;
+    }
+
+    .card .image-box a .cta {
+        margin: 0 !important;
+        right: 10px !important;
+        bottom: 10px !important;
+        width: 55px !important;
+        height: 55px !important;
+        border-radius: 50%;
+        font-size: 45px !important;
+        background: rgba(255, 255, 255, 0.45);
+    }
+
+    .card .image-box a .title p {
+        font-size: 32px !important;
+    }
+
+    .card p {
+        font-size: 17px !important;
+        margin-left: 10px;
     }
 }

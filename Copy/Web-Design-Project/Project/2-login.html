@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="2.login.css">
+</head>
+<body>
+    <div class="topbar" style="position: fixed;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href=""><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+    <div class="navsidebar">
+        <div class="menu">
+            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
+            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
+            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
+            onclick=hidesidebar()>
+        </div>
+        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
+        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar() style="width: 100%; background-color: rgba(21, 194, 221, 0.342);">
+            <a href="2-login.html" style="color: white; font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
+        <div class="search1">
+            <a href="4-search1.html" onclick=hidesidebar()>
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+            <select name="Options" id="whatever">
+                <option value="Destination" selected>By Destination name</option>
+                <option value="Country">By Country name</option>
+            </select>
+        </div>
+        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
+    </div>
+
+    
+
+    <!-- Login Card -->
+    <div class="container">
+        <div class="login-card">
+            <h2>LOGIN</h2>
+
+            <input type="text" placeholder="Enter Email Address" class="input-box" required>
+            <div class="password-box">
+                <input type="password" placeholder="Enter your Password" id="password" required >
+                <span class="show-btn">Show</span>
+            </div>
+
+            <a href="#" class="forgot">Forgotten Password?</a>
+
+            <button class="login-btn">Login</button>
+            <!-- <input type="login" class="login-btn"> -->
+
+            <div class="divider"></div>
+
+            <p class="no-account">Doesn't have an Account? <a href="3-signup.html"></a> </p>
+
+            <a href="3-signup.html"><button class="signup-btn">Sign Up</button></a>
+
+            <p class="or">OR Login/Signup with</p>
+
+            <div class="social-icons">
+                <img src="Images/google.webp" alt="Google" style="width: 30px; height: 30px; margin-top: 8px;">
+                <img src="Images/facebook.png" alt="Facebook" style="width: 43px; height: 43px;">
+                <img src="Images/microsoft.svg" alt="Microsoft" style="margin-top: 3px; width: 39px; height: 39px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>

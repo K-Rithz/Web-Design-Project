@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="9.landingpage.css">
+</head>
+<body>
+    <div class="topbar" style="position: fixed;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="mid">
+            <div class="button1"><a href="4-search1.html">
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+                <select name="Options" id="whatever">
+                    <option value="Destination" selected>By Destination name</option>
+                    <option value="Country">By Country name</option>
+                </select>
+            </div>
+            <div class="button2"><a href="5-category.html">CATEGORY</a></div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+    <div class="navsidebar">
+        <div class="menu">
+            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
+            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
+            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
+            onclick=hidesidebar()>
+        </div>
+        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
+        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
+        <div class="search1">
+            <a href="4-search1.html" onclick=hidesidebar()>
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+            <select name="Options" id="whatever">
+                <option value="Destination" selected>By Destination name</option>
+                <option value="Country">By Country name</option>
+            </select>
+        </div>
+        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
+    </div>
+
+    <!-- Continue from here -->
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

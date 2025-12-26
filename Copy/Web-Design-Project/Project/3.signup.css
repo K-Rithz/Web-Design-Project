@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-card {
+    background: #e6e6e6;
+    width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.signup-card h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* INPUTS */
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"] {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 15px;
+    background: #ffffff;
+}
+
+/* FIRST + LAST NAME */
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group input {
+    flex: 1;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 25px;
+    font-size: 14px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox a {
+    color: #2f6df6;
+    text-decoration: none;
+}
+
+/* BUTTON */
+.signup-card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #4ea3ff, #6fb5ff);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.signup-card button:hover{
+    background: linear-gradient(90deg, #0a2c50, #0a2c50);
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .signup-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .name-group {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

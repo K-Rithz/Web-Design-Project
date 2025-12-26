@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px 0 20px;
+}
+
+.topbar .left {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topbar .left img {
+    width: 13%;
+    height: auto;
+}
+
+.topbar .left span {
+    margin-left: 10px;
+    font-size: 1.8em;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.topbar .left span a {
+    text-decoration: none;
+    color: black;
+}
+
+.topbar .left span a:hover {
+    color: rgb(72, 72, 72);
+}
+
+.topbar .mid {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 25px;
+}
+
+.topbar .mid .button1 {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background: linear-gradient(to top right, rgba(200, 200, 200, 0.2), rgba(180, 180, 180, 0.5));
+    box-shadow: -10px 10px 20px rgba(100, 100, 100, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.topbar .mid .button1:hover {
+    background: linear-gradient(to top right, rgba(200, 200, 250, 0.2), rgba(180, 180, 230, 0.5));
+    box-shadow: -10px 10px 20px rgba(100, 100, 150, 0.2);
+    border-top: 1px solid rgba(55, 55, 232, 0.6);
+    border-bottom: 1px solid rgba(55, 55, 232, 0.6);
+}
+
+.topbar .mid .button1 a {
+    font-family: 'Ubuntu', sans-serif;
+    color: darkgray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.topbar .mid .button1 select {
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 5px;
+    border-radius: 25px;
+    height: 30px;
+    border: solid 1px rgba(0, 0, 255, 0.644);
+    margin-left: 32px;
+    background: transparent;
+}
+
+.topbar .mid .button2 {
+    width: 120px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .mid .button2 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.topbar .mid .button2:hover {
+    background-color: rgb(85, 207, 255);
+    transform: scale(1.05);
+}
+
+.topbar .right {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.topbar .right .nav {
+    background-color: darkgray;
+    border-radius: 30px;
+    width: 520px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .right .nav a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 900;
+    display: flex;
+}
+
+.topbar .right .nav a img {
+    width: 35px; 
+    height: 35px;
+}
+
+.topbar .right .nav a:hover {
+    color :#e3e3e3;
+    transform: translateY(-2px);
+}
+
+.topbar .right .nav img:hover {
+    transform: scale(1.05);
+}
+
+.burger-btn {
+    display: none;
+}
+
+.navsidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.navsidebar .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.navsidebar span a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.navsidebar .search1{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background: linear-gradient(to top right, rgba(200, 200, 200, 0.2), rgba(180, 180, 180, 0.5));
+    box-shadow: -10px 10px 20px rgba(100, 100, 100, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-top: 500px;
+}
+
+.navsidebar .search1:hover {
+    background: linear-gradient(to top right, rgba(200, 200, 250, 0.2), rgba(180, 180, 230, 0.5));
+    box-shadow: -10px 10px 20px rgba(100, 100, 150, 0.2);
+    border-top: 1px solid rgba(55, 55, 232, 0.6);
+    border-bottom: 1px solid rgba(55, 55, 232, 0.6);
+}
+.navsidebar .search1 a {
+    font-family: 'Ubuntu', sans-serif;
+    color: darkgray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.navsidebar .search1 select {
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 5px;
+    border-radius: 25px;
+    height: 30px;
+    border: solid 1px rgba(0, 0, 255, 0.644);
+    margin-left: 32px;
+    background: transparent;
+}
+
+.navsidebar .search2{
+    width: 120px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px;
+}
+
+.navsidebar .search2 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.navsidebar .search2:hover {
+    background-color: rgb(85, 207, 255);
+    transform: scale(1.05);
+}
+
+@media(max-width:900px) {
+    .topbar {
+        padding: 5px 10px 0 10px;
+    }
+    .topbar .left img {
+        width: 30%;
+    }
+    .topbar .left span {
+        font-size: 1.8em;
+    }
+    .topbar .mid {
+        display: none;
+    }
+    .topbar .right {
+        display: none;
+    }
+    .burger-btn {
+        width: 33px;
+        display: inline-block;
+        margin-left: 380px;
+        margin-top: 10px;
+    }
+}

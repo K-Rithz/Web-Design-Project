@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="2.login.css">
 </head>
 <body>
-    <div class="topbar" style="position: fixed;">
+    <div class="topbar" style="position: sticky;">
         <div class="left">
             <img src="Images/Project Logo.png" alt="Logo">
             <span><a href="9-landingpage.html">DOMNER</a></span>
@@ -57,6 +57,36 @@
     </div>
 
     <!-- Continue from here -->
+     <div class="container">
+        <div class="login-card">
+            <h2>LOGIN</h2>
+
+            <input type="text" placeholder="Enter Email Address" class="input-box" required>
+            <div class="password-box">
+                <input type="password" placeholder="Enter your Password" id="password" required >
+                <span class="show-btn">Show</span>
+            </div>
+
+            <a href="#" class="forgot">Forgotten Password?</a>
+
+            <button class="login-btn">Login</button>
+            <!-- <input type="login" class="login-btn"> -->
+
+            <div class="divider"></div>
+
+            <p class="no-account">Doesn't have an Account? <a href="3-signup.html"></a> </p>
+
+            <a href="3-signup.html"><button class="signup-btn">Sign Up</button></a>
+
+            <p class="or">OR Login/Signup with</p>
+
+            <div class="social-icons">
+                <img src="Images/google.webp" alt="Google" style="width: 30px; height: 30px; margin-top: 8px;">
+                <img src="Images/facebook.png" alt="Facebook" style="width: 43px; height: 43px;">
+                <img src="Images/microsoft.svg" alt="Microsoft" style="margin-top: 3px; width: 39px; height: 39px;">
+            </div>
+        </div>
+    </div>
 
     <script>
         function showSidebar() {
@@ -66,6 +96,39 @@
         function hidesidebar() {
             const sidebar = document.querySelector('.navsidebar');
             sidebar.style.display = 'none';
+        }
+        const passwordInput = document.getElementById("password");
+        const showBtn = document.querySelector(".show-btn");
+
+        if(showBtn){
+            showBtn.addEventListener("click", () => {
+                if(passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    showBtn.textContent = "Hide";
+                } else {
+                    passwordInput.type = "password";
+                    showBtn.textContent = "Show";
+                }
+            });
+        }
+
+        const loginBtn = document.querySelector(".login-btn");
+        if(loginBtn){
+            loginBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                const username = document.querySelector(".login-card input[type='text']").value;
+                const password = document.getElementById("password").value;
+
+                let users = JSON.parse(localStorage.getItem("users") || "{}");
+
+                if(users[username] && users[username] === password){
+                    alert(`Welcome back, ${username}!`);
+                    // Redirect to a dashboard page if you want
+                    window.location.href = "1-home.html";
+                } else {
+                    alert("Invalid username or password!");
+                }
+            });
         }
     </script>
 </body>

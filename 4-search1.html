@@ -8,5 +8,134 @@
     <link rel="stylesheet" href="4.search1.css">
 </head>
 <body>
+    <div class="topbar" style="position: sticky;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+    <div class="navsidebar">
+        <div class="menu">
+            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
+            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
+            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
+            onclick=hidesidebar()>
+        </div>
+        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
+        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="8-aboutus.html" style="font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
+        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
+        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
+        <div class="search1">
+            <a href="4-search1.html" onclick=hidesidebar()>
+                <img src="Images/Search Icon.png" alt="Search"
+                style="width: 30px; height: 30px; padding-left: 7px;">
+                <p>Search</p>
+            </a>
+            <select name="Options" id="whatever">
+                <option value="Destination" selected>By Destination name</option>
+                <option value="Country">By Country name</option>
+            </select>
+        </div>
+        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
+    </div>
+
+    <!-- Continue from here -->
+    <div class="head">
+        <img src="Images/Search Icon.png" alt="Search">
+        <input type="text" placeholder="Search by Destination Name" autofocus>
+        <div class="swap"><a href="4-search2.html">
+            <img src="Images/Swap.png" alt="Swap">
+            <p>Search by Country</p>
+        </a></div>
+        <div class="button"><a href="5-category.html">CATEGORY</a></div>
+    </div>
+    <hr style="width: 53.8%; border: 1px solid rgba(0, 0, 0, 0.7); margin-left: 32px; margin-top: 14px;">
+    <div class="main">
+        <div class="headline">Most Searched Destinations in 2025</div>
+        <div class="cards">
+            <div class="card"><a href="">
+                <img src="Images/Angkor Wat.jpg" alt="Angkor Wat">
+                <div class="text">
+                    <p style="font-size: 18px; font-weight: 600;">Angkor Wat</p>
+                    <p style="font-size: 15px; margin-top: -20px; color: #282727;">Cambodia</p>
+                    <div class="rated">
+                        <p>Rated : 5/5</p>
+                        <img src="Images/Star.png" alt="Star">
+                    </div>
+                </div>
+            </a></div>
+            <div class="card"><a href="">
+                <img src="Images/Great Wall.jpg" alt="Great Wall">
+                <div class="text">
+                    <p style="font-size: 18px; font-weight: 600;">Great Wall of China</p>
+                    <p style="font-size: 15px; margin-top: -20px; color: #282727;">China</p>
+                    <div class="rated">
+                        <p>Rated : 4.8/5</p>
+                        <img src="Images/Star.png" alt="Star">
+                    </div>
+                </div>
+            </a></div>
+            <div class="card"><a href="">
+                <img src="Images/Taj Mahal.jpg" alt="Taj Mahal">
+                <div class="text">
+                    <p style="font-size: 18px; font-weight: 600;">Taj Mahal</p>
+                    <p style="font-size: 15px; margin-top: -20px; color: #282727;">India</p>
+                    <div class="rated">
+                        <p>Rated : 4.9/5</p>
+                        <img src="Images/Star.png" alt="Star">
+                    </div>
+                </div>
+            </a></div>
+            <div class="card"><a href="">
+                <img src="Images/Fushi Inari.jpg" alt="Fushimi">
+                <div class="text">
+                    <p style="font-size: 18px; font-weight: 600;">Fushimi Inari</p>
+                    <p style="font-size: 15px; margin-top: -20px; color: #282727;">Japan</p>
+                    <div class="rated">
+                        <p>Rated : 4.7/5</p>
+                        <img src="Images/Star.png" alt="Star">
+                    </div>
+                </div>
+            </a></div>
+            <div class="card"><a href="">
+                <img src="Images/Sagrada.jpg" alt="Sagrada">
+                <div class="text">
+                    <p style="font-size: 18px; font-weight: 600;">Sagrada Familia</p>
+                    <p style="font-size: 15px; margin-top: -20px; color: #282727;">Spain</p>
+                    <div class="rated">
+                        <p>Rated : 5/5</p>
+                        <img src="Images/Star.png" alt="Star">
+                    </div>
+                </div>
+            </a></div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 </body>
 </html>

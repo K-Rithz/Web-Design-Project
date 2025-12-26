@@ -1,0 +1,202 @@
+[
+    {
+        "id" : 1, "name" : "Angkor Wat", "location" : "Cambodia",
+        "category" : "Ancient Building", "status" : "Unfavorite"
+    },
+    {
+        "id" : 2, "name" : "Kirirom", "location" : "Cambodia",
+        "category" : "National Park", "status" : "Unfavorite"
+    }, 
+    {
+        "id" : 3, "name" : "Mondulkiri", "location" : "Cambodia",
+        "category" : "Nature", "status" : "Unfavorite"
+    },
+    {
+        "id" : 4, "name" : "Koh Rong", "location" : "Cambodia",
+        "category" : "Beach", "status" : "Unfavorite"
+    },
+    {
+        "id" : 5, "name" : "Bokor Mountain", "location" : "Cambodia",
+        "category" : "Nature", "status" : "Unfavorite"
+    },
+    { 
+        "id": 6, "name": "Great Wall of China", "location": "China", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 7, "name": "Petra", "location": "Jordan", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 8, "name": "Colosseum", "location": "Italy", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 9, "name": "Chichén Itzá", "location": "Mexico", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 10, "name": "Machu Picchu", "location": "Peru", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 11, "name": "Christ the Redeemer", "location": "Brazil", 
+        "category": "Wonders of the World", "status": "Unfavorite" 
+    },
+    { 
+        "id": 12, "name": "Taj Mahal", "location": "India", 
+        "category": "Wonders of the World", "status": "Unfavorite" },
+
+    { 
+        "id": 13, "name": "Ha Long Bay", "location": "Vietnam", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 14, "name": "Mount Fuji", "location": "Japan", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 15, "name": "Banff National Park", "location": "Canada", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 16, "name": "Yellowstone", "location": "USA", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 17, "name": "Serengeti National Park", "location": "Tanzania", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 18, "name": "Kruger National Park", "location": "South Africa", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 19, "name": "Yosemite", "location": "USA", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 20, "name": "Boracay", "location": "Philippines", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 21, "name": "Great Barrier Reef", "location": "Australia", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 22, "name": "Grand Canyon National Park", "location": "USA", 
+        "category": "National Park", "status": "Unfavorite"
+    },
+    { 
+        "id": 23, "name": "Bali", "location": "Indonesia", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 24, "name": "Maldives", "location": "Maldives", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 25, "name": "Pyramids of Giza", "location": "Egypt", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 26, "name": "Acropolis of Athens", "location": "Greece", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 27, "name": "Stonehenge", "location": "United Kingdom", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 28, "name": "Tikal", "location": "Guatemala", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 29, "name": "Bagan", "location": "Myanmar", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 30, "name": "Borobudur Temple", "location": "Indonesia", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 31, "name": "Amazon Rainforest", "location": "Brazil", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 32, "name": "Swiss Alps", "location": "Switzerland", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 33, "name": "Sahara Desert", "location": "Morocco", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 34, "name": "Plitvice Lakes National Park", "location": "Croatia", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 35, "name": "Fiordland National Park", "location": "New Zealand", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 36, "name": "Copacabana Beach", "location": "Brazil", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 37, "name": "Bondi Beach", "location": "Australia", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 38, "name": "Jeju Island", "location": "South Korea", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 39, "name": "Zanzibar", "location": "Tanzania", 
+        "category": "Beach", "status": "Unfavorite" 
+    },
+    { 
+        "id": 40, "name": "Eiffel Tower", "location": "France", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 41, "name": "Neuschwanstein Castle", "location": "Germany", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 42, "name": "Temple of Heaven", "location": "China", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 43, "name": "Alhambra", "location": "Spain", 
+        "category": "Ancient Building", "status": "Unfavorite" 
+    },
+    { 
+        "id": 44, "name": "Victoria Fall", "location": "Zambia/Zimbabwe", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 45, "name": "Redwood National and State Parks", "location": "USA", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 46, "name": "Cinque Terre", "location": "Italy", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 47, "name": "Lake Baikal", "location": "Russia", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 48, "name": "Galápagos Islands", "location": "Ecuador", 
+        "category": "Nature", "status": "Unfavorite" 
+    },
+    { 
+        "id": 49, "name": "Komodo National Park", "location": "Indonesia", 
+        "category": "National Park", "status": "Unfavorite" 
+    },
+    { 
+        "id": 50, "name": "Jiuzhaigou Valley", "location": "China", 
+        "category": "Nature", "status": "Unfavorite"
+    }
+]

@@ -24,39 +24,62 @@
         </div>
         <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
     </div>
-    <div class="navsidebar">
-        <div class="menu">
-            <span style="margin: 15px 10px; font-family: Tahoma, sans-serif; font-weight: bold;
-            color: rgba(0, 0, 0, 0.8); font-size: 25px;">MENU</span>
-            <img src="Images/Exit Icon.svg" alt="Exit" style="width: 40px; margin-left: 150px; margin-top: 6px;"
-            onclick=hidesidebar()>
-        </div>
-        <hr style="width: 100%; border: 2px solid rgba(0, 0, 0, 0.7)">
-        <span onclick=hidesidebar()><a href="1-home.html" style="font-size: 1.3em; margin: 10px;">HOME</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="6-favorite.html" style="font-size: 1.3em; margin: 10px;">FAVORITE</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="7-contact.html" style="font-size: 1.3em; margin: 10px;">CONTACT</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar() style="width: 100%; background-color: rgba(21, 194, 221, 0.342);">
-            <a href="8-aboutus.html" style="color: white; font-size: 1.3em; margin: 10px;">ABOUT US</a></span>
-        <hr style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.4); margin-left: 0;">
-        <span onclick=hidesidebar()><a href="2-login.html" style="font-size: 1.3em; margin: 10px;">LOGIN/SIGNUP</a></span>
-        <div class="search1">
-            <a href="4-search1.html" onclick=hidesidebar()>
-                <img src="Images/Search Icon.png" alt="Search"
-                style="width: 30px; height: 30px; padding-left: 7px;">
-                <p>Search</p>
-            </a>
-            <select name="Options" id="whatever">
-                <option value="Destination" selected>By Destination name</option>
-                <option value="Country">By Country name</option>
-            </select>
-        </div>
-        <div class="search2"><a href="5-category.html">CATEGORY</a></div>
-    </div>
 
     <!-- Continue from here -->
+    <div class="hero-container">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="about-section">
+        
+        <div class="about-content-left">
+            <h2>About Us</h2>
+            <p><strong>Welcome to Domner – Your Journey Starts Here.</strong></p>
+            <p>Our platform is designed to help travelers quickly discover destinations that match their interests, whether they are looking for nature, culture, city experiences, or weekend getaways. We gather essential information from multiple reliable sources and present it in a clear, easy-to-explore format.</p>
+            <p>Domner aims to make travel planning simpler by offering popular destinations, detailed descriptions, photos, maps, and user-friendly filters such as region, type, and rating. Whether you're a local traveler exploring Cambodia or an international visitor discovering new places, our website serves as a helpful starting point for your next adventure. We believe that exploring the world should be accessible, informative, and enjoyable—and Domner is built to support exactly that.</p>
+        </div>
+
+        <div class="about-team-right">
+            <h2>Our Team</h2>
+            <div class="team-list">
+                
+                <div class="team-member">
+                    <div class="info-box">
+                        <h3>Kong Sothearith</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                </div>
+
+                <div class="team-member reverse-layout">
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                    <div class="info-box">
+                        <h3>Porleak Vitou</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="info-box">
+                        <h3>Kov Cheaching</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <script>
         function showSidebar() {
